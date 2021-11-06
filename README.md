@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+	<img src="" with="800" height="200"/>
+	<h1>Menu de Links - Novo Tempo</h1>
+</div>
+<div align="center">
+  <img src="https://img.shields.io/badge/Church-Novo Tempo-orange?style=for-the-badge&logo=appveyor"/>
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge&logo=appveyor"/>
+  <img src="https://img.shields.io/badge/NextJs-12.0.3-informational?style=for-the-badge&logo=appveyor"/>
+  <img src="https://img.shields.io/badge/Deploy-Vercel-blueviolet?style=for-the-badge&logo=appveyor"/>
+</div>
 
-## Getting Started
+# 🎯 Objetivo
 
-First, run the development server:
+Aplicação de menu para links as plataformas da Igreja Novo Tempo.
+
+# 🛠️ Ferramentas
+
+* [Typescript](https://www.typescriptlang.org/)
+* [NextJs](https://nextjs.org/)
+* [Styled Components](https://styled-components.com/)
+* [Yarn](https://yarnpkg.com/)
+* [VsCode](https://code.visualstudio.com/)
+
+# 🖥️ Padronização de código
+
+* [Eslint](https://eslint.org/)
+* [Prettier](https://prettier.io/)
+* [EditorConfig](https://editorconfig.org/)
+
+
+# 🚀 Executando o projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
+// Instale as dependências
+
+yarn install
+
+// Concluindo a instalação rode
+
+yarn start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 💪🏻 Status do Projeto
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+🚧   Em construção   🚧
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# ✅ Features Desenvolvidas
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+-   [ ] Mobile: Base do projeto
+-   [ ] Mobile: Componentes dos botões
+-   [ ] Mobile: Footer personalizado
+-   [ ] Mobile: Animação ao iniciar a aplicação
+-   [ ] Desktop: Componentes dos botões.
+-   [ ] Desktop: API do Spotify.
+-   [ ] Desktop: API do GoogleMaps.
+-   [ ] Desktop: API do Facebook.
+-   [ ] Desktop: API do Instagram.
+-   [ ] Desktop: Animações nos botões.
+-   [ ] Desktop: Animação ao iniciar a Aplicação.
+-   [ ] Deploy: Subir projeto na Vercel.
 
-## Learn More
+# 📝 Licença
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
