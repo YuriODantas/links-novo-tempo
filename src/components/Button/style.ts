@@ -18,7 +18,7 @@ export const Text = styled.p`
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
 `
 
 export const Icon = styled.img`

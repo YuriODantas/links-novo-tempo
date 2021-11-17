@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px 60px;
+  padding: 10px 30px;
   margin: 10px 0 0 0;
   border-radius: 10px;
   background-color: ${({ theme }) => theme.colors.primary};
@@ -20,17 +20,17 @@ export const Title = styled.p`
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 18px;
 `
 export const Quarta = styled.p`
   margin: 0;
   padding: 0;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 18px;
 `
 export const Domingo = styled.p`
   margin: 0;
   padding: 0;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 18px;
 `
