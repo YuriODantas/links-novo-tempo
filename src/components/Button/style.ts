@@ -23,7 +23,7 @@ export const Text = styled.p`
 
 export const Icon = styled.img`
   position: absolute;
-  top: 11px;
-  left: 10px;
+  top: 6px;
+  left: 6px;
   width: 25px;
 `
