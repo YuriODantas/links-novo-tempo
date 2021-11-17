@@ -46,18 +46,18 @@ yarn start
 
 # ✅ Features Desenvolvidas
 
--   [ ] Mobile: Base do projeto
--   [ ] Mobile: Componentes dos botões
--   [ ] Mobile: Footer personalizado
+-   [x] Mobile: Base do projeto
+-   [x] Mobile: Componentes dos botões
+-   [x] Mobile: Footer personalizado
 -   [ ] Mobile: Animação ao iniciar a aplicação
--   [ ] Desktop: Componentes dos botões.
+-   [x] Desktop: Componentes dos botões.
 -   [ ] Desktop: API do Spotify.
 -   [ ] Desktop: API do GoogleMaps.
 -   [ ] Desktop: API do Facebook.
 -   [ ] Desktop: API do Instagram.
 -   [ ] Desktop: Animações nos botões.
 -   [ ] Desktop: Animação ao iniciar a Aplicação.
--   [ ] Deploy: Subir projeto na Vercel.
+-   [x] Deploy: Subir projeto na Vercel.
 
 # 📝 Licença
 
