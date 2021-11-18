@@ -2,14 +2,13 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px 30px;
-  margin: 10px 0 0 0;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   background-color: ${({ theme }) => theme.colors.primary};
   text-decoration: none;
   color: ${({ theme }) => theme.colors.text};

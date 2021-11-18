@@ -5,5 +5,9 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
+
+  img {
+    width: 60px;
+  }
 `

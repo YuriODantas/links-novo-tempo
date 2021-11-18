@@ -9,7 +9,6 @@ export const Container = styled.main`
 `
 
 export const Content = styled.div`
-  margin: 20px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
