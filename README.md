@@ -18,6 +18,7 @@ Aplicação de menu para links as plataformas da Igreja Novo Tempo.
 * [Typescript](https://www.typescriptlang.org/)
 * [NextJs](https://nextjs.org/)
 * [Styled Components](https://styled-components.com/)
+* [Framer Motion](https://www.framer.com/developers/)
 * [Yarn](https://yarnpkg.com/)
 * [VsCode](https://code.visualstudio.com/)
 
@@ -49,9 +50,9 @@ yarn start
 -   [x] Mobile: Base do projeto
 -   [x] Mobile: Componentes dos botões
 -   [x] Mobile: Footer personalizado
--   [ ] Mobile: Animação ao iniciar a aplicação
+-   [x] Mobile: Animação ao iniciar a aplicação
 -   [x] Desktop: Componentes dos botões.
--   [ ] Desktop: API do Spotify.
+-   [x] Desktop: API do Spotify.
 -   [ ] Desktop: API do GoogleMaps.
 -   [ ] Desktop: API do Facebook.
 -   [ ] Desktop: API do Instagram.

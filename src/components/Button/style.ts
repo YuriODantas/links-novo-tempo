@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Container = styled.a`
+export const Container = styled(motion.a)`
   position: relative;
   display: flex;
   justify-content: center;

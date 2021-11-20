@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Container = styled.p`
+export const Container = styled(motion.p)`
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 300;
   font-size: 24px;
