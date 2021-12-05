@@ -3,20 +3,16 @@ import * as C from './style'
 
 type Props = {
   title: string
-  quarta: string
-  domingo: string
+  primeiroDia: string
+  segundoDia: string
 }
 
-export const Banner = ({ title, quarta, domingo }: Props) => {
+export const Banner = ({ title, primeiroDia, segundoDia }: Props) => {
   return (
-    <C.Container
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 2.5, duration: 0.5 }}
-    >
+    <C.Container>
       <C.Title>{title}</C.Title>
-      <C.Quarta>{quarta}</C.Quarta>
-      <C.Domingo>{domingo}</C.Domingo>
+      <C.PrimeiroDia>{primeiroDia}</C.PrimeiroDia>
+      <C.SegundoDia>{segundoDia}</C.SegundoDia>
     </C.Container>
   )
 }

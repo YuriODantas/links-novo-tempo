@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 10px 0 0 0;
+  flex: 0;
 
   img {
     width: 60px;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import { Container, Content } from '../components/Container'
 import { Header } from '../components/Header'
@@ -7,8 +7,42 @@ import { Description } from '../components/Description'
 import { Button } from '../components/Button'
 import { Banner } from '../components/Banner'
 import { motion } from 'framer-motion'
+import { Footer } from '../components/Footer'
+import { ButtonFooter } from '../components/ButtonFooter'
 
 const Home: React.FC = () => {
+  const [position, setPosition] = useState(0)
+  const programacao = [
+    {
+      title: 'Dias de Culto',
+      primeiroDia: 'Quarta-feira às 19:00',
+      segundoDia: 'Domingo às 19:00'
+    },
+    {
+      title: 'Salvadores',
+      primeiroDia: 'Sábados às 19:00',
+      segundoDia: '(3 primeiros do mês)'
+    },
+    {
+      title: 'Projeto Verão Salvadores',
+      primeiroDia: 'Domingo das 09:00',
+      segundoDia: 'até às 12:00'
+    }
+  ]
+  const handleClick = (type: string) => {
+    if (type === 'next') {
+      if (position < programacao.length - 1) {
+        setPosition(e => e + 1)
+      } else {
+        setPosition(position)
+      }
+    } else if (type === 'previous') {
+      if (position > 0) {
+        setPosition(e => e - 1)
+      }
+    }
+  }
+
   return (
     <div>
       <Head>
@@ -21,16 +55,16 @@ const Home: React.FC = () => {
       </Head>
 
       <Container>
-        <Header>
-          <motion.img
-            src="/logo-novo-tempo.svg"
-            alt="Logo Novo Tempo"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-          />
-          <Title>Igreja Novo Tempo</Title>
-        </Header>
         <Content>
+          <Header>
+            <motion.img
+              src="/logo-novo-tempo.svg"
+              alt="Logo Novo Tempo"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+            />
+            <Title>Igreja Novo Tempo</Title>
+          </Header>
           <Description>Canais Oficiais</Description>
           <Button
             icon="/logo-whatsapp.svg"
@@ -73,12 +107,24 @@ const Home: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 2, duration: 0.5 }}
           ></motion.iframe>
-          <Banner
-            title="Dias de Culto"
-            quarta="Quarta-feira às 19:00"
-            domingo="Domingo às 19:00"
-          />
         </Content>
+        <Footer>
+          <ButtonFooter
+            handleClick={handleClick}
+            type="previous"
+            icon="/btn-previous.svg"
+          />
+          <Banner
+            title={programacao[position].title}
+            primeiroDia={programacao[position].primeiroDia}
+            segundoDia={programacao[position].segundoDia}
+          />
+          <ButtonFooter
+            handleClick={handleClick}
+            type="next"
+            icon="/btn-next.svg"
+          />
+        </Footer>
       </Container>
     </div>
   )

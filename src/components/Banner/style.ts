@@ -1,14 +1,13 @@
-import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Container = styled(motion.div)`
-  position: absolute;
-  bottom: 0;
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 30px;
+  width: 100%;
+  padding: 10px;
+  margin: 0 10px;
   border-radius: 10px 10px 0 0;
   background-color: ${({ theme }) => theme.colors.primary};
   text-decoration: none;
@@ -17,18 +16,21 @@ export const Container = styled(motion.div)`
 `
 
 export const Title = styled.p`
+  width: 100%;
   margin: 0;
   padding: 0;
   font-weight: 400;
   font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.text};
 `
-export const Quarta = styled.p`
+export const PrimeiroDia = styled.p`
   margin: 0;
   padding: 0;
   font-weight: 300;
   font-size: 18px;
 `
-export const Domingo = styled.p`
+export const SegundoDia = styled.p`
   margin: 0;
   padding: 0;
   font-weight: 300;
