@@ -1,46 +1,25 @@
-import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 import Head from 'next/head'
+import React, { useState } from 'react'
+import { Banner } from '../components/Banner'
+import { Button } from '../components/Button'
+import { ButtonFooter } from '../components/ButtonFooter'
 import { Container, Content } from '../components/Container'
+import { Description } from '../components/Description'
+import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { Title } from '../components/Title'
-import { Description } from '../components/Description'
-import { Button } from '../components/Button'
-import { Banner } from '../components/Banner'
-import { motion } from 'framer-motion'
-import { Footer } from '../components/Footer'
-import { ButtonFooter } from '../components/ButtonFooter'
+import { buttonsInfo, schedule } from '../data/infos'
 
 const Home: React.FC = () => {
   const [position, setPosition] = useState(0)
-  const programacao = [
-    {
-      title: 'Dias de Culto',
-      primeiroDia: 'Quarta-feira às 19:00',
-      segundoDia: 'Domingo às 19:00'
-    },
-    {
-      title: 'Salvadores',
-      primeiroDia: 'Sábados às 19:00',
-      segundoDia: '(3 primeiros do mês)'
-    },
-    {
-      title: 'Projeto Verão Salvadores',
-      primeiroDia: 'Domingo das 09:00',
-      segundoDia: 'até às 12:00'
-    }
-  ]
-  const handleClick = (type: string) => {
-    if (type === 'next') {
-      if (position < programacao.length - 1) {
-        setPosition(e => e + 1)
-      } else {
-        setPosition(position)
-      }
-    } else if (type === 'previous') {
-      if (position > 0) {
-        setPosition(e => e - 1)
-      }
-    }
+
+  const handleNextInfoFooter = () => {
+    setPosition(pos => (pos < schedule.length - 1 ? pos + 1 : pos))
+  }
+
+  const handlePreviousInfoFooter = () => {
+    setPosition(pos => (pos > 0 ? pos - 1 : pos))
   }
 
   return (
@@ -66,36 +45,15 @@ const Home: React.FC = () => {
             <Title>Igreja Novo Tempo</Title>
           </Header>
           <Description>Canais Oficiais</Description>
-          <Button
-            icon="/logo-whatsapp.svg"
-            name="Whatsapp"
-            url="https://api.whatsapp.com/send?phone=5513997704143&text=Gra%C3%A7a%20e%20Paz%20!"
-            delay={1.5}
-          />
-          <Button
-            icon="/logo-facebook.svg"
-            name="Facebook"
-            url="https://pt-br.facebook.com/NOVOTEMPOPG/"
-            delay={1.6}
-          />
-          <Button
-            icon="/logo-instagram.svg"
-            name="Instagram Oficial"
-            url="https://www.instagram.com/igrejant/"
-            delay={1.7}
-          />
-          <Button
-            icon="/logo-salvadores.svg"
-            name="Instagram Salvadores"
-            url="https://www.instagram.com/salvadoresnt/"
-            delay={1.8}
-          />
-          <Button
-            icon="/logo-googlemaps.svg"
-            name="Como Chegar"
-            url="https://goo.gl/maps/Fs9KxBP6JxaZiPvZ7"
-            delay={1.9}
-          />
+          {buttonsInfo.map((infos, index) => (
+            <Button
+              key={index}
+              icon={infos.icon}
+              name={infos.name}
+              url={infos.link}
+              delay={infos.delay}
+            />
+          ))}
           <motion.iframe
             src="https://open.spotify.com/embed/show/0AVsxINMLhTCP6GuxpGGgB?utm_source=generator&theme=0"
             width="90%"
@@ -110,17 +68,17 @@ const Home: React.FC = () => {
         </Content>
         <Footer>
           <ButtonFooter
-            handleClick={handleClick}
+            handleClick={handlePreviousInfoFooter}
             type="previous"
             icon="/btn-previous.svg"
           />
           <Banner
-            title={programacao[position].title}
-            primeiroDia={programacao[position].primeiroDia}
-            segundoDia={programacao[position].segundoDia}
+            title={schedule[position].title}
+            primeiroDia={schedule[position].primeiroDia}
+            segundoDia={schedule[position].segundoDia}
           />
           <ButtonFooter
-            handleClick={handleClick}
+            handleClick={handleNextInfoFooter}
             type="next"
             icon="/btn-next.svg"
           />
