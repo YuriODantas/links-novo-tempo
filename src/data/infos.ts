@@ -41,11 +41,5 @@ export const buttonsInfo = [
     name: 'Como Chegar',
     link: 'https://goo.gl/maps/Fs9KxBP6JxaZiPvZ7',
     delay: 1.9
-  },
-  {
-    icon: '/btn-nt.svg',
-    name: 'Cadastro Encontro de Casais',
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLSf3RwZ6Y64xIg1X_Q71quMT-JUALsOkmEgUGvCKrFNr3EG07g/viewform',
-    delay: 2
   }
 ]
