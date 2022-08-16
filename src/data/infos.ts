@@ -41,5 +41,11 @@ export const buttonsInfo = [
     name: 'Como Chegar',
     link: 'https://goo.gl/maps/Fs9KxBP6JxaZiPvZ7',
     delay: 1.9
+  },
+  {
+    icon: '/btn-nt.svg',
+    name: 'Cadastro Seminário Casais',
+    link: 'https://bit.ly/Cadastro_Seminario',
+    delay: 2
   }
 ]
