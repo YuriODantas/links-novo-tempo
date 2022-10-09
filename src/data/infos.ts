@@ -7,12 +7,12 @@ export const schedule = [
   {
     title: 'Juvenis',
     primeiroDia: 'Sábados às 16:00',
-    segundoDia: 'Juvenis dos 12 a 15 anos'
+    segundoDia: 'Idade 10 a 15 anos'
   },
   {
     title: 'Juventude',
-    primeiroDia: 'Sábados às 19:00',
-    segundoDia: 'Jovens solteiros maiores de 16 anos'
+    primeiroDia: 'Sábados às 18:00',
+    segundoDia: 'Jovens solteiros a partir de 16 anos'
   }
 ]
 
