@@ -35,4 +35,5 @@ export const SegundoDia = styled.p`
   padding: 0;
   font-weight: 300;
   font-size: 18px;
+  text-align: center;
 `

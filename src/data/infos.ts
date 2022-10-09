@@ -5,9 +5,14 @@ export const schedule = [
     segundoDia: 'Domingo às 19:00'
   },
   {
-    title: 'Salvadores',
+    title: 'Juvenis',
+    primeiroDia: 'Sábados às 16:00',
+    segundoDia: 'Juvenis dos 12 a 15 anos'
+  },
+  {
+    title: 'Juventude',
     primeiroDia: 'Sábados às 19:00',
-    segundoDia: '(3 primeiros do mês)'
+    segundoDia: 'Jovens solteiros maiores de 16 anos'
   }
 ]
 
@@ -41,11 +46,5 @@ export const buttonsInfo = [
     name: 'Como Chegar',
     link: 'https://goo.gl/maps/Fs9KxBP6JxaZiPvZ7',
     delay: 1.9
-  },
-  {
-    icon: '/btn-nt.svg',
-    name: 'Cadastro Seminário Casais',
-    link: 'https://bit.ly/Cadastro_Seminario',
-    delay: 2
   }
 ]
