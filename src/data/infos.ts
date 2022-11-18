@@ -44,8 +44,8 @@ export const buttonsInfo = [
   },
   {
     icon: '/btn-nt.svg',
-    name: 'Cadastro Seminário Casais',
-    link: 'https://bit.ly/Cadastro_Seminario',
+    name: 'Profissões',
+    link: '/job',
     delay: 2
   }
 ]
