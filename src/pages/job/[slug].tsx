@@ -50,7 +50,7 @@ const ProfessionalProfile: React.FC = () => {
             />
             <Title>Igreja Novo Tempo</Title>
           </Header>
-          <ProPhoto photo={professional.photo} />
+          <ProPhoto name={professional.name} photo={professional.photo} />
           <ProName name={professional.name} />
           <ProProfession profession={professional.profession} />
           {professional.company && (

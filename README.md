@@ -51,7 +51,9 @@ yarn start
 -   [x] Mobile: Componentes dos botões
 -   [x] Mobile: Footer personalizado
 -   [x] Mobile: Animação ao iniciar a aplicação
+-   [x] Mobile: Página de profissionais da Igreja
 -   [x] Desktop: Componentes dos botões.
+-   [x] Desktop: Página de profissionais da Igreja
 -   [x] Desktop: API do Spotify.
 -   [ ] Desktop: API do GoogleMaps.
 -   [ ] Desktop: API do Facebook.

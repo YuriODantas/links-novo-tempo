@@ -11,7 +11,8 @@ interface IProps {
 const Card: FC<IProps> = ({ photo, name, profession, slug }) => {
   return (
     <S.Container href={`/job/${slug}`}>
-      <S.Image src={photo} alt={name + profession} />
+      {photo && <S.Image src={photo} alt={name + profession} />}
+      {!photo && <S.NoImage>{name[0]}</S.NoImage>}
       <S.Name>{name}</S.Name>
       <S.Profession>{profession}</S.Profession>
     </S.Container>
