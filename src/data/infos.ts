@@ -5,9 +5,14 @@ export const schedule = [
     segundoDia: 'Domingo às 19:00'
   },
   {
-    title: 'Salvadores',
-    primeiroDia: 'Sábados às 19:00',
-    segundoDia: '(3 primeiros do mês)'
+    title: 'Juvenis',
+    primeiroDia: 'Sábados às 16:00',
+    segundoDia: 'Idade 10 a 15 anos'
+  },
+  {
+    title: 'Juventude',
+    primeiroDia: 'Sábados às 18:00',
+    segundoDia: 'Jovens solteiros a partir de 16 anos'
   }
 ]
 
@@ -41,11 +46,14 @@ export const buttonsInfo = [
     name: 'Como Chegar',
     link: 'https://goo.gl/maps/Fs9KxBP6JxaZiPvZ7',
     delay: 1.9
+<<<<<<< HEAD
   },
   {
     icon: '/btn-nt.svg',
     name: 'Profissões',
     link: '/job',
     delay: 2
+=======
+>>>>>>> c4be5d4afacaafacdaae084efd4a59167c67e1dd
   }
 ]
