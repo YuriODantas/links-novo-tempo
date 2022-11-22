@@ -46,14 +46,11 @@ export const buttonsInfo = [
     name: 'Como Chegar',
     link: 'https://goo.gl/maps/Fs9KxBP6JxaZiPvZ7',
     delay: 1.9
-<<<<<<< HEAD
   },
   {
     icon: '/btn-nt.svg',
     name: 'Profissões',
     link: '/job',
     delay: 2
-=======
->>>>>>> c4be5d4afacaafacdaae084efd4a59167c67e1dd
   }
 ]
