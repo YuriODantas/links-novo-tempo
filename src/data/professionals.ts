@@ -258,7 +258,7 @@ export const professionals: IProfessional[] = [
     company: 'Prepara Cursos',
     slug: 'prepara-cursos',
     description: 'Escola de cursos profissionalizantes e idiomas.',
-    whatsapp: 'https://api.whatsapp.com/send?phone=551397008719',
+    whatsapp: 'https://api.whatsapp.com/send?phone=5513976008719',
     social: {
       facebook: 'https://pt-br.facebook.com/preparacursospg/'
     }
