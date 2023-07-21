@@ -278,13 +278,5 @@ export const professionals: IProfessional[] = [
     slug: 'tati-trancas',
     description: 'Tranças para cabelos.',
     whatsapp: 'https://api.whatsapp.com/send?phone=5513996309081'
-  },
-  {
-    name: 'Yuri',
-    profession: 'Desenvolvedor de sistemas',
-    company: 'Yuri Solutions',
-    slug: 'yuri-solutions',
-    description: 'Desenvolvimento de sistemas e aplicativos.',
-    whatsapp: 'https://api.whatsapp.com/send?phone=5513996359605'
   }
 ]
