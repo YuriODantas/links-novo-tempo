@@ -2,9 +2,9 @@ import React from 'react'
 import * as C from './style'
 
 type Props = {
-  title: string
-  primeiroDia: string
-  segundoDia: string
+  title?: string
+  primeiroDia?: string
+  segundoDia?: string
 }
 
 export const Banner = ({ title, primeiroDia, segundoDia }: Props) => {

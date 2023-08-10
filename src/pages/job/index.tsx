@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
-import React from 'react'
+import React, { useContext } from 'react'
 import { Button } from '../../components/Button'
 import Card from '../../components/Card'
 import { Container, Content } from '../../components/Container'
@@ -8,9 +8,11 @@ import { Description } from '../../components/Description'
 import { Header } from '../../components/Header'
 import { Title } from '../../components/Title'
 import Wrapper from '../../components/Wrapper'
-import { professionals } from '../../data/professionals'
+import { AppContext } from '../../context/AppContext'
 
 const Job: React.FC = () => {
+  const { professionals } = useContext(AppContext)
+
   return (
     <div>
       <Head>
@@ -47,7 +49,7 @@ const Job: React.FC = () => {
               })
               .map(professional => (
                 <Card
-                  key={professional.slug}
+                  key={professional.id}
                   photo={professional.photo}
                   name={professional.name}
                   profession={professional.profession}

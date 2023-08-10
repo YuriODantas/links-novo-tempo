@@ -5,14 +5,17 @@ import { AnimateSharedLayout } from 'framer-motion'
 
 import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
+import { AppProvider } from '../context/AppContext'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
-      <AnimateSharedLayout>
-        <Component {...pageProps} />
-        <GlobalStyle />
-      </AnimateSharedLayout>
+      <AppProvider>
+        <AnimateSharedLayout>
+          <Component {...pageProps} />
+          <GlobalStyle />
+        </AnimateSharedLayout>
+      </AppProvider>
     </ThemeProvider>
   )
 }

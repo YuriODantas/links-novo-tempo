@@ -14,7 +14,9 @@ interface IProps {
 const ProContacts: FC<IProps> = ({ whatsapp, social, address }) => {
   return (
     <S.Container>
-      <S.Button href={whatsapp}>WhatsApp</S.Button>
+      <S.Button href={`https://api.whatsapp.com/send?phone=55${whatsapp}`}>
+        WhatsApp
+      </S.Button>
       {social?.facebook && <S.Button href={social.facebook}>Facebook</S.Button>}
       {social?.instagram && (
         <S.Button href={social.instagram}>Instagram</S.Button>

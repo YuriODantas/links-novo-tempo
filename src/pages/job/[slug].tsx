@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/dist/client/router'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Button } from '../../components/Button'
 import { Container, Content } from '../../components/Container'
 import { Header } from '../../components/Header'
@@ -11,9 +11,11 @@ import ProName from '../../components/ProfessionalProfile/ProName'
 import ProPhoto from '../../components/ProfessionalProfile/ProPhoto'
 import ProProfession from '../../components/ProfessionalProfile/ProProfession'
 import { Title } from '../../components/Title'
-import { IProfessional, professionals } from '../../data/professionals'
+import { AppContext } from '../../context/AppContext'
+import { IProfessional } from '../../data/professionals'
 
 const ProfessionalProfile: React.FC = () => {
+  const { professionals } = useContext(AppContext)
   const [professional, setProfessional] = useState<IProfessional | null>(null)
   const { query } = useRouter()
   const slug = query.slug
@@ -22,7 +24,7 @@ const ProfessionalProfile: React.FC = () => {
     if (slug) {
       setProfessional(professionals.find(prof => prof.slug === slug))
     }
-  }, [slug])
+  }, [slug, professionals])
 
   if (!professional) {
     return null
