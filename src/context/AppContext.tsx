@@ -12,24 +12,35 @@ const formatterProfessionals = (workbook: XLSX.WorkBook) => {
   rawData.shift()
   rawData.shift()
   rawData.shift()
-  const formatterData: IProfessional[] = rawData.map(data => {
-    return {
-      id: data[0],
-      name: data[1],
-      profession: data[2],
-      company: data[3],
-      photo: data[8],
-      slug: data[6],
-      description: data[4],
-      address: data[7],
-      whatsapp: data[5],
-      social: {
-        facebook: data[9],
-        instagram: data[10],
-        linkedIn: data[11]
+  const formatterData: IProfessional[] = rawData
+    .map(data => {
+      return {
+        id: data[0],
+        name: data[1],
+        profession: data[2],
+        company: data[3],
+        photo: data[8],
+        slug: data[6],
+        description: data[4],
+        address: data[7],
+        whatsapp: data[5],
+        social: {
+          facebook: data[9],
+          instagram: data[10],
+          linkedIn: data[11]
+        }
       }
-    }
-  })
+    })
+    .sort((a, b) => {
+      if (a.name > b.name) {
+        return 1
+      }
+      if (a.name < b.name) {
+        return -1
+      }
+      return 0
+    })
+    .filter(data => data.slug)
   return formatterData
 }
 

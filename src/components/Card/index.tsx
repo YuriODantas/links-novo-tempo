@@ -12,7 +12,7 @@ const Card: FC<IProps> = ({ photo, name, profession, slug }) => {
   return (
     <S.Container href={`/job/${slug}`}>
       {photo && <S.Image src={photo} alt={name + profession} />}
-      {!photo && <S.NoImage>{name[0]}</S.NoImage>}
+      {!photo && name && <S.NoImage>{name[0]}</S.NoImage>}
       <div
         style={{
           display: 'flex',

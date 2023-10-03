@@ -37,25 +37,15 @@ const Job: React.FC = () => {
           </Header>
           <Description>O que temos na Igreja</Description>
           <Wrapper>
-            {professionals
-              .sort((a, b) => {
-                if (a.name > b.name) {
-                  return 1
-                }
-                if (a.name < b.name) {
-                  return -1
-                }
-                return 0
-              })
-              .map(professional => (
-                <Card
-                  key={professional.id}
-                  photo={professional.photo}
-                  name={professional.name}
-                  profession={professional.profession}
-                  slug={professional.slug}
-                />
-              ))}
+            {professionals.map(professional => (
+              <Card
+                key={professional.id}
+                photo={professional.photo}
+                name={professional.name}
+                profession={professional.profession}
+                slug={professional.slug}
+              />
+            ))}
           </Wrapper>
           <Button icon="/btn-previous.svg" name="Voltar" url="/" delay={2} />
         </Content>
